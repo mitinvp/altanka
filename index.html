@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Розбірні альтанки з доставкою по Україні</title>
+<title>Модульна альтанка: виготовляємо в Запоріжжі, збираєте самі</title>
 <meta name="description" content="Виготовляємо розбірні альтанки з металевого каркаса й дерева під ваші розміри. Відправляємо по всій Україні, збираються самостійно.">
-<meta property="og:title" content="Розбірні альтанки з доставкою по Україні">
+<meta property="og:title" content="Модульна альтанка: виготовляємо в Запоріжжі, збираєте самі">
 <meta property="og:description" content="Металевий каркас, дерев'яні лавки й стіл, дах на вибір. Розрахунок під ваші розміри.">
 <meta property="og:image" content="img/karkas-lavky.webp">
 <meta property="og:type" content="website">
@@ -18,16 +18,16 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif}
-img{max-width:100%;display:block}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 clamp(17px,1.1vw,19px)/1.6 Manrope,system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--pine);outline-offset:3px}
 h1,h2,h3{font-family:Oswald,Impact,sans-serif;font-weight:700;line-height:1.1;margin:0}
-h1{font-size:clamp(2.4rem,7vw,4.6rem)}
+h1{font-size:clamp(2.4rem,6vw,5.4rem)}
 h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:.6em}
 h3{font-size:1.3rem;font-weight:500;margin-bottom:.3em}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-section{padding:72px 0}
+.wrap{max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+section{padding:clamp(56px,8vw,104px) 0}
 header{position:sticky;top:0;z-index:5;background:var(--steel);color:#fff}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
 .logo{font-family:Oswald,sans-serif;font-weight:700;font-size:1.2rem;text-decoration:none;letter-spacing:.02em}
@@ -38,16 +38,16 @@ nav a{text-decoration:none;opacity:.85}nav a:hover{opacity:1}
 .btn:hover{background:#e6ac4f}
 .btn.ghost{background:none;border:2px solid currentColor;color:inherit;padding:12px 24px}
 .hero{background:var(--steel);color:#fff;padding:0}
-.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding-top:48px;padding-bottom:48px}
-.hero p{font-size:1.15rem;max-width:34ch;margin:1em 0 1.6em;color:#d5dbd9}
-.hero img{border-radius:4px;aspect-ratio:1/1;object-fit:cover;width:100%}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:center;padding-top:56px;padding-bottom:56px}
+.hero p{font-size:1.2rem;max-width:36ch;margin:1em 0 1.6em;color:#d5dbd9}
+.hero img{border-radius:4px;aspect-ratio:4/5;max-height:80vh;object-fit:cover;width:100%}
 .hero .row{display:flex;gap:12px;flex-wrap:wrap}
 @media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero img{order:-1;aspect-ratio:4/3}}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
 .facts div{border-left:4px solid var(--pine);padding-left:14px}
 .facts b{display:block;font-family:Oswald,sans-serif;font-size:1.25rem;font-weight:500}
 @media(max-width:720px){.facts{grid-template-columns:1fr}}
-.models{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.models{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
 .card img{aspect-ratio:4/3;object-fit:cover;width:100%}
 .card div{padding:18px 20px 22px}
@@ -59,7 +59,7 @@ nav a{text-decoration:none;opacity:.85}nav a:hover{opacity:1}
 .steps b{display:block;font-family:Oswald,sans-serif;font-weight:500;font-size:1.2rem;margin:.3em 0}
 .steps span{color:var(--soft);font-size:.95rem}
 @media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
-.gallery{columns:3 240px;column-gap:14px}
+.gallery{columns:3 280px;column-gap:14px}
 .gallery img{width:100%;margin-bottom:14px;border-radius:4px}
 details{border-bottom:1px solid var(--line);padding:16px 0}
 summary{cursor:pointer;font-weight:800;list-style:none}
@@ -78,7 +78,7 @@ footer{padding:22px 0;font-size:.85rem;color:var(--soft)}
 </head>
 <body>
 <header><div class="wrap">
-  <a class="logo" href="#top">НАЗВА</a>
+  <a class="logo" href="#top">Модульна альтанка</a>
   <nav><a href="#models">Моделі</a><a href="#how">Як це працює</a><a href="#works">Роботи</a><a href="#faq">Питання</a><a class="tel" href="tel:+380000000000">+38 (000) 000-00-00</a></nav>
 </div></header>
 
@@ -86,7 +86,7 @@ footer{padding:22px 0;font-size:.85rem;color:var(--soft)}
 <section class="hero"><div class="wrap">
   <div>
     <h1>Розбірні альтанки з доставкою по Україні</h1>
-    <p>Металевий каркас, дерев'яні лавки й стіл. Робимо під ваші розміри та відправляємо в розібраному вигляді.</p>
+    <p>Виготовляємо в Запоріжжі, збираєте самі. Металевий каркас, дерев'яні лавки й стіл під ваші розміри, відправка в розібраному вигляді.</p>
     <div class="row"><a class="btn" href="#contacts">Замовити розрахунок</a><a class="btn ghost" href="#works">Дивитись роботи</a></div>
   </div>
   <img src="img/karkas-lavky.webp" alt="Металевий каркас розбірної альтанки з дерев'яними лавками і столом" width="1400" height="1400">
@@ -155,12 +155,12 @@ footer{padding:22px 0;font-size:.85rem;color:var(--soft)}
   </div>
   <div>
     <a class="big" href="tel:+380000000000">+38 (000) 000-00-00</a>
-    <p>Місто виробництва: уточнити</p>
+    <p>Виробництво в Запоріжжі. Відправляємо по всій Україні.</p>
   </div>
 </div></section>
 </main>
 
-<footer><div class="wrap">© <script>document.write(new Date().getFullYear())</script> НАЗВА. Розбірні альтанки.</div></footer>
+<footer><div class="wrap">© <script>document.write(new Date().getFullYear())</script> Модульна альтанка. Виготовляємо в Запоріжжі, збираєте самі. Розбірні альтанки.</div></footer>
 <a class="btn fab" href="tel:+380000000000">Зателефонувати</a>
 </body>
 </html>
